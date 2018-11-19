@@ -24,7 +24,6 @@ def bisec(e, max, a, b):   #e = precisão
             break
 
         i = i + 1
-    return x
 
 def main():
     #e = input("Erro: ")
