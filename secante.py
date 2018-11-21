@@ -5,7 +5,6 @@ def f(x):  #f = x^4 - 2x^3 - 4x^2 + 4x + 4:
     return total
 
 def secante(e, max, a, b):
-    xf = 0
     x = []
 
     x.append((a + b) / 2)
@@ -21,8 +20,8 @@ def secante(e, max, a, b):
         print(i, x[k], erro)
 
         if erro < e:
-            xf = x[k]
             break
+            
         i = i + 1
 
 def main():
@@ -31,7 +30,7 @@ def main():
     #a = input("Ponto a: ")
     #b = input("Ponto b: ")
     #secante(float(e), int(max), int(a), int(b))
-    secante(0.0000001, 20, 0, 3)
+    secante(0.000001, 20, 0, 3)
 
 if __name__ == '__main__':
     main()
