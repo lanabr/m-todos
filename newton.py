@@ -9,7 +9,6 @@ def deri(x): #f' = 4x^3 - 6x^2 - 8x + 4
     return total
 
 def newton(e, max, a, b):
-    xf = 0
     x = []
     i = 0
     x.append((a + b) / 2)
@@ -21,7 +20,6 @@ def newton(e, max, a, b):
         print(i, x[k], erro)
 
         if erro < e:
-            xf = x[k]
             break
 
         i = i + 1
@@ -32,7 +30,7 @@ def main():
     #a = input("Ponto a: ")
     #b = input("Ponto b: ")
     #newton(float(e), int(max), int(a), int(b))
-    newton(0.0000001, 20, 0, 3)
+    newton(0.000001, 20, 0, 3)
 
 if __name__ == '__main__':
     main()
