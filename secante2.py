@@ -7,7 +7,6 @@ def f(h):  #f = V = L((pir^2) / 2 - r^2 arcsen(h / r) - h(r^2 - h^2)^(1/2))
     return total
 
 def secante(e, max, a, b):
-    xf = 0
     x = []
 
     x.append((a + b) / 2)
@@ -23,7 +22,6 @@ def secante(e, max, a, b):
         print(i, x[k], erro)
 
         if erro < e:
-            xf = x[k]
             break
         i = i + 1
     print("Profundidade: ", 1 - x[k])
