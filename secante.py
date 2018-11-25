@@ -7,9 +7,9 @@ def f(x):  #f = x^4 - 2x^3 - 4x^2 + 4x + 4:
 def secante(e, max, a, b):
     x = []
 
-    x.append((a + b) / 2)
+    x.append((a + b) / 2)  #+ 1 para o segundo ponto
     print("0", x[0], "0.0")
-    x.append(((a + b) / 2) - 0.1)
+    x.append(((a + b) / 2) - 0.1) #+ 0.9 para o segundo ponto
     print("1", x[1], np.abs(x[1] - x[0]))
     i = 2
     for k in range(2, max):
