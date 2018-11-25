@@ -10,11 +10,12 @@ def deri(x): #f' = 4x^3 - 6x^2 - 8x + 4
 
 def newton(e, max, a, b):
     x = []
-    i = 0
-    x.append((a + b) / 2)
+    x.append((a + b) / 2) #+ 1 para o segundo ponto
+    print(0, x[0], 0.0)
+    i = 1
 
-    for k in range(0, max):
-        x.append(x[k] - f(x[k]) / deri(x[k]))
+    for k in range(1, max):
+        x.append(x[k - 1] - f(x[k - 1]) / deri(x[k - 1]))
 
         erro = np.abs(x[k] - x[k - 1])
         print(i, x[k], erro)
