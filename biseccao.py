@@ -1,16 +1,16 @@
 import numpy as np
 
-def f(x): #f = x^4 - 2x^3 - 4x^2 + 4x + 4:
-    total = pow(x, 4) - 2 * pow(x, 3) - 4 * pow(x, 2) + 4 * x + 4
+def f(x): #f = x^4 - 2x^3 - 4x^2 + 4x + 4, f' = 4x^3 - 6x^2 - 8x + 4
+    total = 4 * pow(x, 3) - 6 * pow(x, 2) - 8 * x + 4
     return total
 
 def bisec(e, max, a, b):   #e = precisão
     i = 0
     x = []
+    
+    x.append((a + b) / 2)
 
     for k in range(0, max):
-        x.append((a + b) / 2)
-        
         if f(x[k]) < 0:
             b = x[k]
         else:
@@ -23,6 +23,9 @@ def bisec(e, max, a, b):   #e = precisão
             break
 
         i = i + 1
+        
+        x.append((a + b) / 2)
+        
 
 def main():
     #e = input("Erro: ")
