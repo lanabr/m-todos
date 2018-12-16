@@ -1,16 +1,16 @@
 import numpy as np
 
-def f(x):  #f = x^4 - 2x^3 - 4x^2 + 4x + 4:
-    total = pow(x, 4) - 2 * pow(x, 3) - 4 * pow(x, 2) + 4 * x + 4
+def f(x):  #f = x^4 - 2x^3 - 4x^2 + 4x + 4, f' = 4x^3 - 6x^2 - 8x + 4
+    total = 4 * pow(x, 3) - 6 * pow(x, 2) - 8 * x + 4
     return total
 
-def deri(x): #f' = 4x^3 - 6x^2 - 8x + 4
-    total = 4 * pow(x, 3) - 6 * pow(x, 2) - 8 * x + 4
+def deri(x): #f'' = 12x^2 - 12x - 8
+    total = 12 * pow(x, 2) - 12 * x - 8
     return total
 
 def newton(e, max, a, b):
     x = []
-    x.append((a + b) / 2) #+ 1 para o segundo ponto
+    x.append((a + b) / 2) 
     print(0, x[0], 0.0)
     i = 1
 
