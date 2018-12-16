@@ -70,7 +70,7 @@ def main():
 
     poli = newton(n, x, y)
 
-    print("Função ii) e^x com 5 pontos:\n", poli)
+    print("Função ii) 1 / (1 + 25 * x ^2) com 5 pontos:\n", poli)
 
     # Função ii) 1 / (1 + 25 * x ^2) com 11 pontos
     x = [-0.82, -0.64, -0.46, -0.28, -0.1, 0.08, 0.26, 0.44, 0.62, 0.8, 0.98]
@@ -79,7 +79,7 @@ def main():
 
     poli = newton(n, x, y)
 
-    print("Função ii) e^x com 11 pontos:\n", poli)
+    print("Função ii) 1 / (1 + 25 * x ^2) com 11 pontos:\n", poli)
 
     # Função ii) 1 / (1 + 25 * x ^2) com 15 pontos
     x = [-0.87, -0.74, -0.61, -0.48, -0.35, -0.22, -0.09, 0.04, 0.17, 0.3, 0.43, 0.56, 0.69, 0.82, 0.95]
@@ -88,7 +88,7 @@ def main():
 
     poli = newton(n, x, y)
 
-    print("Função ii) e^x com 15 pontos:\n", poli)
+    print("Função ii) 1 / (1 + 25 * x ^2) com 15 pontos:\n", poli)
 
 if __name__ == '__main__':
     main()
